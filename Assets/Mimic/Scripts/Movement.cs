@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 namespace MimicSpace
 {
     /// <summary>
@@ -10,117 +11,107 @@ namespace MimicSpace
     /// </summary>
     public class Movement : MonoBehaviour
     {
-        [Header("Controls")]
-        [Tooltip("Body Height from ground")]
+        [Header("Controls")] 
+        [Tooltip("Body Height from ground")] 
         [Range(0.5f, 5f)]
-        public float height = 0.8f;
+        public float height = 2f;
+
         public float speed = 5f;
         Vector3 velocity = Vector3.zero;
         public float velocityLerpCoef = 4f;
         Mimic myMimic;
-        
+
         //
         public NavMeshAgent agent;
 
         public Transform player;
 
         public LayerMask whatIsGround, whatIsPlayer;
-        
+
+        public float health;
+
         //Patroling
         public Vector3 walkPoint;
         bool walkPointSet;
         public float walkPointRange;
 
-        //Attacking
-        public float timeBetweenAttacks;
-        bool alreadyAttacked;
-        public GameObject projectile;
-
+      
         //States
         public float sightRange, attackRange;
         public bool playerInSightRange, playerInAttackRange;
+
 
         private void Awake()
         {
             player = GameObject.Find("RigidBodyFPSController").transform;
             agent = GetComponent<NavMeshAgent>();
         }
+
         private void Start()
         {
             myMimic = GetComponent<Mimic>();
         }
+        
+        
 
         void Update()
         {
-            velocity = Vector3.Lerp(velocity, new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized * speed, velocityLerpCoef * Time.deltaTime);
-            
-            // Assigning velocity to the mimic to assure great leg placement
+            velocity = Vector3.Lerp(velocity,
+                (walkPoint - transform.position).normalized * speed,
+                velocityLerpCoef * Time.deltaTime);
             myMimic.velocity = velocity;
-            
-            //Check for sight and attack range
-            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-            if (!playerInSightRange && !playerInAttackRange) Patroling();
-            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-            //if (playerInAttackRange && playerInSightRange) AttackPlayer();
-            //transform.position = transform.position + velocity * Time.deltaTime;
-            /*RaycastHit hit;
+            RaycastHit hit;
             Vector3 destHeight = transform.position;
             if (Physics.Raycast(transform.position + Vector3.up * 5f, -Vector3.up, out hit))
                 destHeight = new Vector3(transform.position.x, hit.point.y + height, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);*/
+            transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);
+            
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
+            if (!playerInSightRange && !playerInAttackRange) 
+                Patroling();
+            
+            if (playerInSightRange && !playerInAttackRange) 
+                ChasePlayer();
         }
-        /*private void Patroling()
-        {
-            if (!walkPointSet) SearchWalkPoint();
-
-            if (walkPointSet)
-                agent.SetDestination(walkPoint);
-
-            Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-            //Walkpoint reached
-            if (distanceToWalkPoint.magnitude < 1f)
-                walkPointSet = false;
-        }*/
+        
         private void Patroling()
         {
-            // Jeśli nie ustawiono punktu patrolowania lub dotarto do aktualnego punktu
-            if (!walkPointSet || Vector3.Distance(transform.position, walkPoint) < 1f)
+            if (!walkPointSet) 
+                SearchWalkPoint();
+
+            if (walkPointSet)
             {
-                // Wybierz losową pozycję na NavMesh
-                Vector3 randomDirection = Random.insideUnitSphere * 10f; // Zakładam promień ruchu 10 jednostek
-                randomDirection += transform.position;
-                NavMeshHit hit;
-                NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas); // Ustaw promień próbkowania na 10 jednostek
+                
+                agent.SetDestination(walkPoint);
 
-                // Ustaw nowy punkt jako walkPoint
-                walkPoint = hit.position;
-                walkPointSet = true; // Ustaw flagę na true, że punkt został ustawiony
+
+                Vector3 distanceToWalkPoint = transform.position - walkPoint;
+
+                //Walkpoint reached
+                if (distanceToWalkPoint.magnitude < 1f)
+                    walkPointSet = false;
             }
-
-            // Patroluj do wybranego punktu
-            agent.SetDestination(walkPoint);
         }
-
+        
         private void SearchWalkPoint()
         {
-            //Calculate random point in range
-            float randomZ = Random.Range(-walkPointRange, walkPointRange);
-            float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-            walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-            if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+            NavMeshHit hit;
+            Vector3 randomDirection = Random.insideUnitSphere * walkPointRange;
+            randomDirection += transform.position;
+    
+            if (NavMesh.SamplePosition(randomDirection, out hit, walkPointRange, NavMesh.AllAreas))
+            {
+                walkPoint = hit.position;
                 walkPointSet = true;
+            }
         }
 
+        
         private void ChasePlayer()
         {
             agent.SetDestination(player.position);
         }
-
     }
-
 }
