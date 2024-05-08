@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e336dfc7cc3e7954296365ed89730511
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152103
+  packageName: FROOD - Free food and drinks pack
+  packageVersion: 1.0
+  assetPath: Assets/FROOD/Materials/LiquidRed.mat
+  uploadId: 327706
