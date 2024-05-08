@@ -10,7 +10,8 @@ public class Portal : MonoBehaviour
     private BoxCollider me;
 
     public bool disable = false;
-    [SerializeField] private GameObject player;
+    private GameObject player;
+    //private GameObject player;
     [SerializeField] private GameObject dest;
 
     private bool a;
@@ -22,13 +23,13 @@ public class Portal : MonoBehaviour
     {
         me = GetComponent<BoxCollider>();
         //dummy = GetComponentInChildren<GameObject>();
-        //my_camera = GetComponentInChildren<Camera>(); //????
+        my_camera = GetComponentInChildren<Camera>(); //????
     }
 
     // Update is called once per frame
     void Update()
     {
-        //set_camera_position();
+        set_camera_position();
     }
 
     void set_camera_position()
@@ -37,19 +38,27 @@ public class Portal : MonoBehaviour
         //my_camera.transform.position = dest.transform.position + tmp_pos;
         //my_camera.transform.rotation = player_camera.transform.rotation;
         //my_camera.GetComponentInChildren<GameObject>().transform.position = my_camera.transform.position;
-        Vector3 entr_player_vector = player.transform.position - me.transform.position;
-        entr_player_vector =
-            Quaternion.Euler(dest.transform.eulerAngles - me.transform.eulerAngles) * entr_player_vector;
-        dummy.transform.position = dest.transform.position + entr_player_vector;
-        dummy.transform.eulerAngles =
-            player.transform.eulerAngles + dest.transform.eulerAngles - me.transform.eulerAngles;
+        
+        Vector3 cam_vector = player_camera.transform.position - me.transform.position;
+        cam_vector = Quaternion.Euler(dest.transform.eulerAngles - me.transform.eulerAngles) * cam_vector;
+        my_camera.transform.position = dest.transform.position + cam_vector;
+        my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + dest.transform.eulerAngles - me.transform.eulerAngles;
+        
+        // Vector3 entr_player_vector = player.transform.position - me.transform.position;
+        // entr_player_vector =
+        //     Quaternion.Euler(dest.transform.eulerAngles - me.transform.eulerAngles) * entr_player_vector;
+        // dummy.transform.position = dest.transform.position + entr_player_vector;
+        // dummy.transform.eulerAngles =
+        //     player.transform.eulerAngles + dest.transform.eulerAngles - me.transform.eulerAngles;
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         if (!disable)
         {
             dest.GetComponent<Portal>().disable = true;
+            //other.transform.position += new Vector3(0, 10, 0);
+            player = other.gameObject;
             
             Vector3 tmp = player.transform.position - me.transform.position;
 
@@ -61,6 +70,8 @@ public class Portal : MonoBehaviour
             tmp = Quaternion.Euler(dest.transform.eulerAngles - me.transform.eulerAngles) * tmp;
             player.transform.position += tmp;
             //Debug.Log(player.GetComponent<Rigidbody>().velocity);
+            
+            //player_camera.transform.eulerAngles += dest.transform.eulerAngles - me.transform.eulerAngles;
         }
     }
     
