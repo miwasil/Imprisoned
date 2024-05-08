@@ -71,7 +71,7 @@ namespace MimicSpace
                 destHeight = new Vector3(transform.position.x, hit.point.y + height, transform.position.z);
             transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);*/
         }
-        private void Patroling()
+        /*private void Patroling()
         {
             if (!walkPointSet) SearchWalkPoint();
 
@@ -83,7 +83,27 @@ namespace MimicSpace
             //Walkpoint reached
             if (distanceToWalkPoint.magnitude < 1f)
                 walkPointSet = false;
+        }*/
+        private void Patroling()
+        {
+            // Jeśli nie ustawiono punktu patrolowania lub dotarto do aktualnego punktu
+            if (!walkPointSet || Vector3.Distance(transform.position, walkPoint) < 1f)
+            {
+                // Wybierz losową pozycję na NavMesh
+                Vector3 randomDirection = Random.insideUnitSphere * 10f; // Zakładam promień ruchu 10 jednostek
+                randomDirection += transform.position;
+                NavMeshHit hit;
+                NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas); // Ustaw promień próbkowania na 10 jednostek
+
+                // Ustaw nowy punkt jako walkPoint
+                walkPoint = hit.position;
+                walkPointSet = true; // Ustaw flagę na true, że punkt został ustawiony
+            }
+
+            // Patroluj do wybranego punktu
+            agent.SetDestination(walkPoint);
         }
+
         private void SearchWalkPoint()
         {
             //Calculate random point in range
