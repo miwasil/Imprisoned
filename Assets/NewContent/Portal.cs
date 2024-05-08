@@ -10,7 +10,7 @@ public class Portal : MonoBehaviour
     private BoxCollider me;
 
     public bool disable = false;
-    [SerializeField] private GameObject player;
+    private GameObject player;
     //private GameObject player;
     [SerializeField] private GameObject dest;
 
@@ -52,11 +52,13 @@ public class Portal : MonoBehaviour
         //     player.transform.eulerAngles + dest.transform.eulerAngles - me.transform.eulerAngles;
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         if (!disable)
         {
             dest.GetComponent<Portal>().disable = true;
+            //other.transform.position += new Vector3(0, 10, 0);
+            player = other.gameObject;
             
             Vector3 tmp = player.transform.position - me.transform.position;
 
@@ -68,6 +70,8 @@ public class Portal : MonoBehaviour
             tmp = Quaternion.Euler(dest.transform.eulerAngles - me.transform.eulerAngles) * tmp;
             player.transform.position += tmp;
             //Debug.Log(player.GetComponent<Rigidbody>().velocity);
+            
+            //player_camera.transform.eulerAngles += dest.transform.eulerAngles - me.transform.eulerAngles;
         }
     }
     
