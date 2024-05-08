@@ -19,9 +19,8 @@ public class ProjectileAddon : MonoBehaviour
         if (targetHit)
             return;
         else
-        {
             targetHit = true;
-        }
+        
 
         rb.isKinematic = true;
         transform.SetParent(collision.transform);
