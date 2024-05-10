@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class ProjectileAddon : MonoBehaviour
 {
+    public GameObject explosionPrefab;
     private Rigidbody rb;
     private bool targetHit;
+    public float explosionLifetime = 2.0f;
 
     private void Start()
     {
@@ -24,5 +26,11 @@ public class ProjectileAddon : MonoBehaviour
 
         rb.isKinematic = true;
         transform.SetParent(collision.transform);
+        
+        GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+
+        Destroy(gameObject);
+        Destroy(explosion, explosionLifetime);
     }
 }
