@@ -43,7 +43,7 @@ namespace MimicSpace
 
         private void Awake()
         {
-            player = GameObject.Find("RigidBodyFPSController").transform;
+            player = GameObject.Find("hero").transform;
             agent = GetComponent<NavMeshAgent>();
         }
 
