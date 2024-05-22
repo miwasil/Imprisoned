@@ -5,10 +5,6 @@ using UnityEngine.AI;
 
 namespace MimicSpace
 {
-    /// <summary>
-    /// This is a very basic movement script, if you want to replace it
-    /// Just don't forget to update the Mimic's velocity vector with a Vector3(x, 0, z)
-    /// </summary>
     public class Movement : MonoBehaviour
     {
         [Header("Controls")]
@@ -20,26 +16,26 @@ namespace MimicSpace
         private Vector3 velocity = Vector3.zero;
         public float velocityLerpCoef = 4f;
         private Mimic myMimic;
-
+        private FieldOfView fieldOfView;
         public NavMeshAgent agent;
         public Transform player;
         public LayerMask whatIsGround, whatIsPlayer;
 
         public float health;
 
-        //Patrolling
+        // Patrolling
         private Vector3 walkPoint;
         private bool walkPointSet;
         public float walkPointRange;
 
-        //States
+        // States
         public float sightRange, attackRange;
         private bool playerInSightRange, playerInAttackRange;
 
         private void Awake()
         {
-            player = GameObject.Find("hero").transform;
             agent = GetComponent<NavMeshAgent>();
+            fieldOfView = GetComponent<FieldOfView>();
         }
 
         private void Start()
@@ -49,28 +45,25 @@ namespace MimicSpace
             {
                 Debug.LogError("Mimic component not found on this GameObject.");
             }
+
+            if (fieldOfView == null)
+            {
+                Debug.LogError("FieldOfView component not found on this GameObject.");
+            }
+
+            player = fieldOfView.player; // Ensure player reference is the same
         }
 
         private void Update()
         {
-            // Update the enemy's velocity
-            //velocity = Vector3.Lerp(velocity, (walkPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
-           
-            //myMimic.velocity = velocity;
-            
-
             // Adjust height based on the ground
             AdjustHeight();
 
-            // Check player's position relative to the enemy
-            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+            //playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            if (!playerInSightRange && !playerInAttackRange)
+            if (!fieldOfView.canSeePlayer)
                 Patroling();
-            
-            
-            if (playerInSightRange && !playerInAttackRange)
+            else if (fieldOfView.canSeePlayer)
                 ChasePlayer();
         }
 
@@ -88,9 +81,8 @@ namespace MimicSpace
         private void Patroling()
         {
             velocity = Vector3.Lerp(velocity, (walkPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
-           
             myMimic.velocity = velocity;
-            
+
             if (!walkPointSet)
                 SearchWalkPoint();
 
@@ -109,7 +101,7 @@ namespace MimicSpace
         {
             Vector3 randomDirection = Random.insideUnitSphere * walkPointRange;
             randomDirection += transform.position;
-            
+
             if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, walkPointRange, NavMesh.AllAreas))
             {
                 walkPoint = hit.position;
@@ -119,11 +111,9 @@ namespace MimicSpace
 
         private void ChasePlayer()
         {
-            
             agent.SetDestination(player.position);
             velocity = Vector3.Lerp(velocity, (player.position - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
             myMimic.velocity = velocity;
-
         }
     }
 }
