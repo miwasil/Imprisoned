@@ -452,7 +452,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a8732e14cad4f0199aa5c9f408689c7, type: 2}
+  - {fileID: 2100000, guid: 1660388aa77feb14b8162d99e38f85d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -762,7 +762,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 85c6d585319a936dca4f5a22ad830ec7, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 3c2fe8cad9328253c9872d4bee1bc1c2, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -900,7 +900,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 865327ddb7a9e2ecebd8ce4fd9dbc659, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 2ef61550e3389db8ea837d8e1751e52a, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -1056,7 +1056,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26c4d60d29b80367099556c910ddb904, type: 2}
+  - {fileID: 2100000, guid: 0795c5dd2bc601a6288ee19568d30975, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

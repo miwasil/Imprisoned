@@ -23,6 +23,7 @@ public class Portal : MonoBehaviour
 
 	private List<GameObject> children = new List<GameObject>();
 
+    private RenderTexture view_texture;
 
     void Awake()
     {
@@ -94,12 +95,8 @@ public class Portal : MonoBehaviour
             player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
             tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
             player.transform.position += tmp;
-<<<<<<< HEAD
             //Debug.Log(player.GetComponent<Rigidbody>().velocity);
-=======
             Debug.Log(player.name);
-            
->>>>>>> a447125efe3f3dea3308c1f77e647c724230cd2b
             //player_camera.transform.eulerAngles += dest.transform.eulerAngles - me.transform.eulerAngles;
         }
     }
