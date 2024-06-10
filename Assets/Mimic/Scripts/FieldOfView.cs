@@ -13,7 +13,7 @@ public class FieldOfView : MonoBehaviour
     public LayerMask obstructionMask;
 
     public bool canSeePlayer;
-
+    public Vector3 lastSeen;
     private void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
@@ -51,7 +51,11 @@ public class FieldOfView : MonoBehaviour
                 float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                {
+                    lastSeen = player.transform.position;
                     canSeePlayer = true;
+                }
+
                 else
                     canSeePlayer = false;
             }

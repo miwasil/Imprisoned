@@ -20376,7 +20376,6 @@ MonoBehaviour:
   disable: 0
   dest: {fileID: 1985847347}
   player_camera: {fileID: 564457448}
-  dummy: {fileID: 0}
 --- !u!65 &871364113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40610,7 +40609,7 @@ PrefabInstance:
       objectReference: {fileID: 1802604940}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: speed
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: health
@@ -40638,7 +40637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocityLerpCoef
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: playerInAttackRange
@@ -42715,7 +42714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da93e9a2be3441f59477139d36197722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 15
+  radius: 60
   angle: 355
   player: {fileID: 1349019895}
   targetMask:
@@ -42725,6 +42724,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   canSeePlayer: 0
+  lastSeen: {x: 0, y: 0, z: 0}
 --- !u!135 &1802604945
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58320,7 +58320,6 @@ MonoBehaviour:
   disable: 0
   dest: {fileID: 871364111}
   player_camera: {fileID: 564457448}
-  dummy: {fileID: 0}
 --- !u!65 &1985847349
 BoxCollider:
   m_ObjectHideFlags: 0

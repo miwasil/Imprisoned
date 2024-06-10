@@ -31,6 +31,8 @@ namespace MimicSpace
         // States
         public float sightRange, attackRange;
         private bool playerInSightRange, playerInAttackRange;
+        private Vector3 lastKnownPosition;
+        private bool isChasingLastKnownPosition;
 
         private void Awake()
         {
@@ -59,12 +61,20 @@ namespace MimicSpace
             // Adjust height based on the ground
             AdjustHeight();
 
-            //playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+            if (fieldOfView.canSeePlayer)
+            {
+                lastKnownPosition = fieldOfView.lastSeen;
+                isChasingLastKnownPosition = true;
+            }
 
-            if (!fieldOfView.canSeePlayer)
+            if (isChasingLastKnownPosition)
+            {
+                ChaseLastKnownPosition();
+            }
+            else if (!fieldOfView.canSeePlayer)
+            {
                 Patroling();
-            else if (fieldOfView.canSeePlayer)
-                ChasePlayer();
+            }
         }
 
         private void AdjustHeight()
@@ -114,6 +124,19 @@ namespace MimicSpace
             agent.SetDestination(player.position);
             velocity = Vector3.Lerp(velocity, (player.position - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
             myMimic.velocity = velocity;
+        }
+
+        private void ChaseLastKnownPosition()
+        {
+            agent.SetDestination(lastKnownPosition);
+            velocity = Vector3.Lerp(velocity, (lastKnownPosition - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
+            myMimic.velocity = velocity;
+
+            // Check if the enemy has reached the last known position
+            if (Vector3.Distance(transform.position, lastKnownPosition) < 1f)
+            {
+                isChasingLastKnownPosition = false;
+            }
         }
     }
 }
