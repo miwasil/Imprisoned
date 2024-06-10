@@ -94,6 +94,6 @@ public class Throwing : MonoBehaviour
 
     private void UpdateJarsText()
     {
-        jarsText.text = totalThrows + "/7"; // Aktualizacja tekstu w TextMeshPro
+        //jarsText.text = totalThrows + "/7"; // Aktualizacja tekstu w TextMeshPro
     }
 }

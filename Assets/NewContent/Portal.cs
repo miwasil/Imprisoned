@@ -25,6 +25,9 @@ public class Portal : MonoBehaviour
 
     private RenderTexture view_texture;
 
+    private MeshRenderer camera_target;
+    
+
     void Awake()
     {
         // me = GetComponent<BoxCollider>();
@@ -45,6 +48,10 @@ public class Portal : MonoBehaviour
         my_screan=transform.Find("PortalScreen").gameObject;
         my_camera=transform.Find("Camera").GetComponent<Camera>();
         dest_screen = dest.transform.Find("PortalScreen").gameObject;
+        view_texture = new RenderTexture(Screen.width, Screen.height, 0);
+        my_camera.targetTexture = view_texture;
+        camera_target = my_screan.GetComponent<MeshRenderer>();
+        camera_target.material.SetTexture("_MainTex",view_texture);
     }
 
     public void Renderr()
