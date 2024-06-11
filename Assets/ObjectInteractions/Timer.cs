@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class RoomTimer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI Timertext;  // Reference to the UI Text component
-    private float timer;    // To keep track of the time spent in the room
+    public float timer;    // To keep track of the time spent in the room
     private bool playerInRoom;  // To check if the player is in the room
 
     void Start()
