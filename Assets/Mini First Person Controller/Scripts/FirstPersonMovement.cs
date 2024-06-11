@@ -22,7 +22,7 @@ public class FirstPersonMovement : MonoBehaviour
     void Start()
     {
         // Reset rotation at the start
-        transform.rotation = Quaternion.identity;
+        // transform.rotation = Quaternion.identity;
     }
 
     void FixedUpdate()
