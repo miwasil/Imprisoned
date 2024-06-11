@@ -27,7 +27,9 @@ public class Portal : MonoBehaviour
 
     private MeshRenderer camera_target;
     
-
+    //travellers
+    private List<GameObject> objects_to_watch = new List<GameObject>();
+    private List<double> objects_to_watch_dprod = new List<double>();
     void Awake()
     {
         // me = GetComponent<BoxCollider>();
@@ -68,6 +70,7 @@ public class Portal : MonoBehaviour
     void Update()
     {
         //set_camera_position();
+        //teleport_stuff();
     }
 
     public void set_camera_position()
@@ -92,25 +95,41 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!disable)
         {
-            dest.GetComponent<Portal>().disable = true;
-            //other.transform.position += new Vector3(0, 10, 0);
-            player = other.gameObject;
-            Vector3 tmp = player.transform.position - my_screan.transform.position;
-            //player.transform.position += dest.transform.position - me.transform.position;
-            player.transform.position = dest.transform.position;
-            player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-            //player.transform.rotation *= dest.transform.rotation / me.transform.rotation;
-            player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
-            tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
-            player.transform.position += tmp;
-            //Debug.Log(player.GetComponent<Rigidbody>().velocity);
-            Debug.Log(player.name);
-            //player_camera.transform.eulerAngles += dest.transform.eulerAngles - me.transform.eulerAngles;
+            objects_to_watch.Add(other.gameObject);
+            Vector3 player_portal_vector = other.gameObject.transform.position - transform.position;
+            objects_to_watch_dprod.Add(Vector3.Dot(transform.forward, player_portal_vector));
         }
     }
 
+    private void teleport_stuff()
+    {
+        for (int i = 0; i < objects_to_watch.Count; i++)
+        {
+            player = objects_to_watch[i];
+            Vector3 player_portal_vector = player.transform.position - transform.position;
+            float dot_now = Vector3.Dot(transform.forward, player_portal_vector);
+            //Debug.Log(dot_now);
+            //Debug.Log(objects_to_watch_dprod[i]);
+            if (Math.Sign(dot_now) != Math.Sign(objects_to_watch_dprod[i]))
+            {
+                objects_to_watch.Remove(player);
+                Vector3 tmp = player.transform.position - my_screan.transform.position;
+                player.transform.position = dest.transform.position;
+                player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
+                tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                player.transform.position += tmp;
+                //Debug.Log(player.name);
+            }
+
+            //objects_to_watch_dprod[i] = dot_now;
+        }
+
+        // dest.GetComponent<Portal>().disable = true;
+        // player = other.gameObject;
+
+    }
     // private void OnDisable()
     // {
     //     Debug.Log("hoy");
@@ -122,23 +141,31 @@ public class Portal : MonoBehaviour
     //     Debug.Log("hoy");
     //     set_camera_position();
     // }
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
-        disable = false;
+        int tmp = objects_to_watch.IndexOf(other.gameObject);
+        objects_to_watch.Remove(other.gameObject);
+        if (tmp != -1)
+        {
+            objects_to_watch_dprod.RemoveAt(tmp);
+        }
     }
 
     void set_near_clip_plane()
     {
-        // Learning resource:
         // http://www.terathon.com/lengyel/Lengyel-Oblique.pdf
         Transform clipPlane = transform;
         //Vector3 tmp = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         int dot = System.Math.Sign(Vector3.Dot(clipPlane.forward, transform.position - my_camera.transform.position));
-
         Vector3 camSpacePos = my_camera.worldToCameraMatrix.MultiplyPoint(clipPlane.position);
         Vector3 camSpaceNormal = my_camera.worldToCameraMatrix.MultiplyVector(clipPlane.forward) * dot;
-        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + 0.02f;
+        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + (float)transform.localScale.z + 0.02f;
         Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
+    }
+
+    void FixedUpdate()
+    {
+        teleport_stuff();
     }
 }
