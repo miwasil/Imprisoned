@@ -50,16 +50,19 @@ public class Portal : MonoBehaviour
         dest_screen = dest.transform.Find("PortalScreen").gameObject;
         view_texture = new RenderTexture(Screen.width, Screen.height, 0);
         my_camera.targetTexture = view_texture;
-        camera_target = my_screan.GetComponent<MeshRenderer>();
+        camera_target = dest_screen.GetComponent<MeshRenderer>();
         camera_target.material.SetTexture("_MainTex",view_texture);
+        
+        my_camera.enabled = false;
     }
 
     public void Renderr()
     {
-        dest_screen.SetActive(false);
+        my_screan.SetActive(false);
         set_camera_position();
+        set_near_clip_plane();
         my_camera.Render();
-        dest_screen.SetActive(true);
+        my_screan.SetActive(true);
     }
     // Update is called once per frame
     void Update()
@@ -74,10 +77,10 @@ public class Portal : MonoBehaviour
         //my_camera.transform.rotation = player_camera.transform.rotation;
         //my_camera.GetComponentInChildren<GameObject>().transform.position = my_camera.transform.position;
         
-        Vector3 cam_vector = player_camera.transform.position - my_screan.transform.position;
-        cam_vector = Quaternion.Euler(dest_screen.transform.eulerAngles - my_screan.transform.eulerAngles) * cam_vector;
-        my_camera.transform.position = dest_screen.transform.position + cam_vector;
-        my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + dest_screen.transform.eulerAngles - my_screan.transform.eulerAngles;
+        Vector3 cam_vector = player_camera.transform.position - dest_screen.transform.position;
+        cam_vector = Quaternion.Euler(my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
+        my_camera.transform.position = my_screan.transform.position + cam_vector;
+        my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles;
         
         // Vector3 entr_player_vector = player.transform.position - me.transform.position;
         // entr_player_vector =
@@ -119,9 +122,23 @@ public class Portal : MonoBehaviour
     //     Debug.Log("hoy");
     //     set_camera_position();
     // }
-    
     private void OnTriggerExit()
     {
         disable = false;
+    }
+
+    void set_near_clip_plane()
+    {
+        // Learning resource:
+        // http://www.terathon.com/lengyel/Lengyel-Oblique.pdf
+        Transform clipPlane = transform;
+        //Vector3 tmp = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        int dot = System.Math.Sign(Vector3.Dot(clipPlane.forward, transform.position - my_camera.transform.position));
+
+        Vector3 camSpacePos = my_camera.worldToCameraMatrix.MultiplyPoint(clipPlane.position);
+        Vector3 camSpaceNormal = my_camera.worldToCameraMatrix.MultiplyVector(clipPlane.forward) * dot;
+        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + 0.02f;
+        Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
+        my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
     }
 }
