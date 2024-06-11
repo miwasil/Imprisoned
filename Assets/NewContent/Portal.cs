@@ -17,8 +17,8 @@ public class Portal : MonoBehaviour
     private GameObject my_screan;
     private GameObject a;
 
-
-    [SerializeField] private Camera player_camera;
+    private FirstPersonLook player_rotation_setter; //UWAGA czeba ustawic
+    private Camera player_camera;
     private Camera my_camera;
 
 	private List<GameObject> children = new List<GameObject>();
@@ -26,6 +26,8 @@ public class Portal : MonoBehaviour
     private RenderTexture view_texture;
 
     private MeshRenderer camera_target;
+
+    [SerializeField]private GameObject heroo;
     
     //travellers
     private List<GameObject> objects_to_watch = new List<GameObject>();
@@ -47,6 +49,7 @@ public class Portal : MonoBehaviour
   //           //Debug.Log(a.name);
   //           //children.Add(a);
 		// }
+        player_camera = heroo.GetComponentInChildren<Camera>();
         my_screan=transform.Find("PortalScreen").gameObject;
         my_camera=transform.Find("Camera").GetComponent<Camera>();
         dest_screen = dest.transform.Find("PortalScreen").gameObject;
@@ -54,8 +57,9 @@ public class Portal : MonoBehaviour
         my_camera.targetTexture = view_texture;
         camera_target = dest_screen.GetComponent<MeshRenderer>();
         camera_target.material.SetTexture("_MainTex",view_texture);
-        
         my_camera.enabled = false;
+        
+        player_rotation_setter = player_camera.GetComponent<FirstPersonLook>();
     }
 
     public void Renderr()
@@ -114,13 +118,32 @@ public class Portal : MonoBehaviour
             if (Math.Sign(dot_now) != Math.Sign(objects_to_watch_dprod[i]))
             {
                 objects_to_watch.Remove(player);
-                Vector3 tmp = player.transform.position - my_screan.transform.position;
-                player.transform.position = dest.transform.position;
-                player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
-                tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
-                player.transform.position += tmp;
-                //Debug.Log(player.name);
+                
+                if (player.tag == "Player")
+                {
+                    Vector3 tmp = player.transform.position - my_screan.transform.position;
+                    player.transform.position = dest.transform.position;
+                    player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    
+                    // Vector3 player_rot = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    // player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
+                    
+                    player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
+                    tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                    player.transform.position += tmp;   
+                }
+                else
+                {
+                    Vector3 tmp = player.transform.position - my_screan.transform.position;
+                    player.transform.position = dest.transform.position;
+                    player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    player.GetComponent<Rigidbody>().velocity =
+                        Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
+                        player.GetComponent<Rigidbody>().velocity;
+                    tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                    player.transform.position += tmp;
+                    //Debug.Log(player.name);
+                }
             }
 
             //objects_to_watch_dprod[i] = dot_now;

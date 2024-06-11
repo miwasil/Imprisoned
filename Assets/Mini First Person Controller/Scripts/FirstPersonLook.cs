@@ -42,7 +42,7 @@ public class FirstPersonLook : MonoBehaviour
 
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         oldMouseDelta = mouseDelta;
-        Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
+      Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -90, 90);
@@ -51,7 +51,7 @@ public class FirstPersonLook : MonoBehaviour
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
     }
 
-    void SetCameraRotation(Vector2 newRotation)
+    public void SetCameraRotation(Vector2 newRotation) // nie dziala powinno obracac gracz do zadanej poycji
     {
         velocity.x = newRotation.y; // Rotacja wokół osi Y (obrót poziomy)
         velocity.y = -newRotation.x; // Rotacja wokół osi X (obrót pionowy)
