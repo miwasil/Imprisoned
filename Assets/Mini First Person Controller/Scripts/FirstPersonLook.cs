@@ -13,7 +13,6 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 frameVelocity;
     Vector2 oldMouseDelta;
     
-
     void Reset()
     {
         character = GetComponentInParent<FirstPersonMovement>().transform;
@@ -28,16 +27,21 @@ public class FirstPersonLook : MonoBehaviour
         velocity = new Vector2(characterEulerAngles.y, -characterEulerAngles.x);
 
         // Jeżeli initialCameraRotation ma być używane jako nadpisanie domyślnej rotacji, można je dodać do velocity
-        // velocity += initialCameraRotation;
-        //
-        // character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
-        // transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
+        velocity += initialCameraRotation;
+        
+        character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+        transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SetCameraRotation(new Vector2(0, 180));
+        }
+
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        Vector2 oldMouseDelta = mouseDelta;
+        oldMouseDelta = mouseDelta;
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
@@ -45,5 +49,14 @@ public class FirstPersonLook : MonoBehaviour
 
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+    }
+
+    void SetCameraRotation(Vector2 newRotation)
+    {
+        velocity.x = newRotation.y; // Rotacja wokół osi Y (obrót poziomy)
+        velocity.y = -newRotation.x; // Rotacja wokół osi X (obrót pionowy)
+
+        character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+        transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
     }
 }

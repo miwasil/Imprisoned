@@ -39,5 +39,6 @@ public class HeroCollisionChecker : MonoBehaviour
         // Aktywacja czarnego ekranu i tekstu "YouLost"
         blackScreen.gameObject.SetActive(true);
         youLostText.SetActive(true);
+
     }
 }
