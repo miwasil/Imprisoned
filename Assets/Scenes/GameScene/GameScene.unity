@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -357,6 +361,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -699,6 +707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.940094
@@ -926,6 +938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -995,6 +1011,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -1066,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -1135,6 +1159,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2925,6 +2953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -2994,6 +3026,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3577,6 +3613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -3638,6 +3678,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3701,6 +3745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -3762,6 +3810,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3836,6 +3888,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5012,6 +5068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -5117,6 +5177,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -5253,6 +5317,10 @@ PrefabInstance:
     - target: {fileID: 154778, guid: 03396297ca39f2a49bf02b6a413cc9a5, type: 3}
       propertyPath: m_Name
       value: stone_half_gate.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 154778, guid: 03396297ca39f2a49bf02b6a413cc9a5, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 441710, guid: 03396297ca39f2a49bf02b6a413cc9a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -5745,6 +5813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -6008,6 +6080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -6104,6 +6180,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8326,6 +8406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -8392,6 +8476,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8986,6 +9074,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10457,6 +10549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.940094
@@ -10659,6 +10755,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -10863,6 +10963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -10924,6 +11028,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -11125,6 +11233,10 @@ PrefabInstance:
     - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_Name
       value: TreeCreator_Bush_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 495364, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12898,6 +13010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -13113,6 +13229,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13420,6 +13540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -13549,6 +13673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -13618,6 +13746,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -14311,6 +14443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -14432,7 +14568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 310968630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14469,6 +14605,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -14539,6 +14679,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -15703,6 +15847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -15850,6 +15998,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17321,6 +17473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -17666,6 +17822,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19394,6 +19554,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21583,6 +21747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_small.002
       objectReference: {fileID: 0}
+    - target: {fileID: 186568, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 470926, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.747635
@@ -21645,6 +21813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -21706,6 +21878,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -21776,6 +21952,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -22083,6 +22263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -22144,6 +22328,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -22739,6 +22927,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23415,6 +23607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.940094
@@ -23538,6 +23734,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24297,6 +24497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -24797,7 +25001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513135895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: things_in_rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24840,6 +25044,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25079,6 +25287,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -25407,6 +25619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -25676,6 +25892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -25745,6 +25965,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -26835,6 +27059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.940094
@@ -27760,6 +27988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -27826,6 +28058,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -28107,6 +28343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -28181,6 +28421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -28242,6 +28486,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -28316,6 +28564,10 @@ PrefabInstance:
     - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_Name
       value: TreeCreator_Bush_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 495364, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30314,6 +30566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -30636,6 +30892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGR_Pipe_B
       objectReference: {fileID: 0}
+    - target: {fileID: 111700, guid: 89d3804ae1d951b42a266ad900c34eaf, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 456768, guid: 89d3804ae1d951b42a266ad900c34eaf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.05
@@ -30875,6 +31135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_small.002 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 186568, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 470926, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.91
@@ -31066,6 +31330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -31135,6 +31403,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31326,6 +31598,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -32621,6 +32897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -32682,6 +32962,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33046,6 +33330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -33299,7 +33587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773882323}
   - component: {fileID: 773882322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NavMesh Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33324,7 +33612,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 342
+    m_Bits: 834
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -33333,7 +33621,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 386e5839754edd846888eab05856382a, type: 2}
   m_BuildHeightMesh: 0
@@ -33346,7 +33634,7 @@ Transform:
   m_GameObject: {fileID: 773882321}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.58219, y: -3.8711166, z: 103.35835}
+  m_LocalPosition: {x: -49.58219, y: -3.75, z: 103.35835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33521,6 +33809,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34231,6 +34523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.940094
@@ -34292,6 +34588,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -34560,6 +34860,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35143,6 +35447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -35616,6 +35924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -35678,6 +35990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -35739,6 +36055,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36367,6 +36687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -36428,6 +36752,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36877,6 +37205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -37007,6 +37339,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37301,6 +37637,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38074,6 +38414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -38136,6 +38480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -38197,6 +38545,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38425,6 +38777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -38560,6 +38916,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -39043,6 +39403,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39915,6 +40279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (128)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -40381,6 +40749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -40499,6 +40871,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -40806,6 +41182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -41011,6 +41391,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42232,6 +42616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -42302,6 +42690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_small.002 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 186568, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 470926, guid: 23e0f70ea4aae464294b917138f981d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.747635
@@ -42363,6 +42755,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43136,6 +43532,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44295,6 +44695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.940094
@@ -44998,6 +45402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -45309,6 +45717,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45702,7 +46114,7 @@ GameObject:
   - component: {fileID: 1032127390}
   - component: {fileID: 1032127389}
   - component: {fileID: 1032127388}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PortalScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45809,6 +46221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -45913,6 +46329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -45974,6 +46394,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46098,6 +46522,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46397,6 +46825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -46458,6 +46890,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46850,6 +47286,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51028,6 +51468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -51453,6 +51897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -51869,6 +52317,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (136)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52498,6 +52950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -52559,6 +53015,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (139)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53805,6 +54265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -54494,6 +54958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -54782,6 +55250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -54905,6 +55377,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55338,6 +55814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -55414,7 +55894,7 @@ GameObject:
   - component: {fileID: 1236008963}
   - component: {fileID: 1236008962}
   - component: {fileID: 1236008961}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55932,6 +56412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -56294,6 +56778,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (133)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56717,6 +57205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -56853,6 +57345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -56976,6 +57472,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -57633,6 +58133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -57694,6 +58198,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -57835,6 +58343,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58376,6 +58888,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59561,6 +60077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (122)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -59622,6 +60142,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60109,6 +60633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -60344,6 +60872,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -60767,7 +61299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332618795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Walls_Around
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61344,9 +61876,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 513135895}
     m_Modifications:
+    - target: {fileID: 149642, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 155658, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 167346, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_Name
       value: CobbleRock_E
+      objectReference: {fileID: 0}
+    - target: {fileID: 167346, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 197640, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61409,6 +61957,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62008,6 +62560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -62206,6 +62762,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -62267,6 +62827,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62473,6 +63037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.940094
@@ -62658,6 +63226,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (140)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63212,6 +63784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -63406,6 +63982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -63468,6 +64048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.940094
@@ -63529,6 +64113,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63666,6 +64254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -63790,6 +64382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -63851,6 +64447,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (142)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64278,6 +64878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -64638,6 +65242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -64699,6 +65307,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -64909,6 +65521,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65327,6 +65943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeCreator_Bush_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 495364, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.52869
@@ -65389,6 +66009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -65447,9 +66071,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 513135895}
     m_Modifications:
+    - target: {fileID: 105362, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 112432, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 128016, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 139462, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
       propertyPath: m_Name
       value: Rock_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 139462, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 488602, guid: f39758d3d915d104080c0e3321b8c75b, type: 3}
       propertyPath: m_LocalScale.x
@@ -65594,6 +66234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -65655,6 +66299,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65792,6 +66440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -65853,6 +66505,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66147,6 +66803,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -66730,6 +67390,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68306,6 +68970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -68627,6 +69295,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70659,6 +71331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -71269,6 +71945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -71620,6 +72300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.940094
@@ -71869,6 +72553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (134)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -71928,7 +72616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1615271787}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72931,6 +73619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bench
       objectReference: {fileID: 0}
+    - target: {fileID: 127218, guid: 772e39ecee6e82b448cf916ec25d359c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 490962, guid: 772e39ecee6e82b448cf916ec25d359c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.470436
@@ -73215,6 +73907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -73366,6 +74062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -73432,6 +74132,10 @@ PrefabInstance:
     - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_Name
       value: TreeCreator_Bush_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 196434, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 495364, guid: 2c33c759b6bfb1448a79429a0c761b44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73850,6 +74554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (143)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.940094
@@ -74038,7 +74746,7 @@ PrefabInstance:
       objectReference: {fileID: 1802604940}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: speed
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: health
@@ -74066,7 +74774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocityLerpCoef
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: playerInAttackRange
@@ -74074,7 +74782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: whatIsGround.m_Bits
-      value: 438
+      value: 434
       objectReference: {fileID: 0}
     - target: {fileID: 608258904, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: whatIsPlayer.m_Bits
@@ -74090,15 +74798,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794082, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.8
+      value: 95.33
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794082, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.724
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794082, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 112.5
+      value: 306.38
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794082, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74130,15 +74838,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.x
-      value: 0.622728
+      value: -0.017157791
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: velocity.z
-      value: 0.26551235
+      value: -0.4129128
       objectReference: {fileID: 0}
     - target: {fileID: 8675915457954794083, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: numberOfLegs
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675915458194695970, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675915458194695970, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675915458194695970, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675915458194695970, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8675915458194695971, guid: 3fc537e92bf3d2449b5be72cfd6cb447, type: 3}
       propertyPath: m_Layer
@@ -74172,6 +74896,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75555,6 +76283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (126)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.940094
@@ -75701,6 +76433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.368
@@ -75774,6 +76510,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76035,6 +76775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -76215,6 +76959,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77070,6 +77818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -77166,6 +77918,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77620,7 +78376,7 @@ GameObject:
   - component: {fileID: 1778599063}
   - component: {fileID: 1778599062}
   - component: {fileID: 1778599061}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78774,6 +79530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
@@ -79035,8 +79795,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1479372276
   m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 5
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -79046,7 +79806,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 3
 --- !u!114 &1802604944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79059,7 +79819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da93e9a2be3441f59477139d36197722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 60
+  radius: 20
   angle: 355
   player: {fileID: 1349019895}
   targetMask:
@@ -79646,6 +80406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.940094
@@ -79744,6 +80508,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -80046,6 +80814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.940094
@@ -80112,6 +80884,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80530,6 +81306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -80665,6 +81445,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -81207,6 +81991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: short_wall (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -81280,6 +82068,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -81539,6 +82331,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82785,6 +83581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80.940094
@@ -83361,6 +84161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.940094
@@ -83422,6 +84226,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83551,6 +84359,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -85037,6 +85849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Tall_B
       objectReference: {fileID: 0}
+    - target: {fileID: 185326, guid: 0afb191bb5d4e8c47b6fddcd5b8c8bea, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 493884, guid: 0afb191bb5d4e8c47b6fddcd5b8c8bea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.30662
@@ -85234,6 +86050,10 @@ PrefabInstance:
     - target: {fileID: 164862, guid: 57abdd11cedcad8478c764228178c11f, type: 3}
       propertyPath: m_Name
       value: stone_half_gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 164862, guid: 57abdd11cedcad8478c764228178c11f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 460226, guid: 57abdd11cedcad8478c764228178c11f, type: 3}
       propertyPath: m_LocalScale.x
@@ -86226,6 +87046,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -98129,6 +98953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.940094
@@ -98451,6 +99279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_half_gate.001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 154778, guid: 03396297ca39f2a49bf02b6a413cc9a5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 441710, guid: 03396297ca39f2a49bf02b6a413cc9a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -98559,6 +99391,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -98920,6 +99756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.940094
@@ -98981,6 +99821,10 @@ PrefabInstance:
     - target: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
       propertyPath: m_Name
       value: Grass_Small_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 103420, guid: 883e84064e0818d46b851b53952056f7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 463064, guid: 883e84064e0818d46b851b53952056f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -99209,6 +100053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.940094
@@ -99332,6 +100180,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -99590,7 +100442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038728642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99988,6 +100840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 76.940094
@@ -100118,6 +100974,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: short_wall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.x
@@ -100314,6 +101174,10 @@ PrefabInstance:
     - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_Name
       value: stone_wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 105632, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458024, guid: d2522dcf0fb8d6b4aa4ddd10c405746a, type: 3}
       propertyPath: m_LocalScale.y
@@ -100739,6 +101603,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -101835,7 +102703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089428912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102426,6 +103294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: granite_panel (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.940094
@@ -102647,6 +103519,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -104176,6 +105052,10 @@ PrefabInstance:
     - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_Name
       value: granite_panel (141)
+      objectReference: {fileID: 0}
+    - target: {fileID: 107662, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 433404, guid: 5cd8c9e8157360648bf43e9188816395, type: 3}
       propertyPath: m_LocalPosition.x
