@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace MimicSpace
+
 {
     public class Movement : MonoBehaviour
     {
@@ -12,16 +13,16 @@ namespace MimicSpace
         [Range(0.5f, 5f)]
         public float height = 2f;
 
-        public float speed = 5f;
+        private float speed = 5f;
         private Vector3 velocity = Vector3.zero;
-        public float velocityLerpCoef = 4f;
+        private float velocityLerpCoef = 4f;
         private Mimic myMimic;
         private FieldOfView fieldOfView;
         public NavMeshAgent agent;
         public Transform player;
         public LayerMask whatIsGround, whatIsPlayer;
 
-        public float health;
+        public float health = 100f;
 
         // Patrolling
         private Vector3 walkPoint;
@@ -31,9 +32,19 @@ namespace MimicSpace
         // States
         public float sightRange, attackRange;
         private bool playerInSightRange, playerInAttackRange;
-        private Vector3 lastKnownPosition;
-        private bool isChasingLastKnownPosition;
 
+        // Retreating
+        public Vector3 retreatPoint;
+        public float retreatDistance = 20f;
+        public float retreatHealthThreshold = 20f;
+        private bool isRetreating = false;
+
+        // Last seen player position
+        private Vector3 lastSeenPlayerPosition;
+        private bool isChasingLastSeenPosition = false;
+        
+        // Timer
+        public RoomTimer roomTimer;
         private void Awake()
         {
             agent = GetComponent<NavMeshAgent>();
@@ -60,20 +71,30 @@ namespace MimicSpace
         {
             // Adjust height based on the ground
             AdjustHeight();
+            //speed += (roomTimer.timer/10);
+            //agent.acceleration += (roomTimer.timer/10);
+            //agent.angularSpeed += (roomTimer.timer/10);
 
-            if (fieldOfView.canSeePlayer)
+            if (isRetreating)
             {
-                lastKnownPosition = fieldOfView.lastSeen;
-                isChasingLastKnownPosition = true;
+                Retreat();
             }
-
-            if (isChasingLastKnownPosition)
+            else
             {
-                ChaseLastKnownPosition();
-            }
-            else if (!fieldOfView.canSeePlayer)
-            {
-                Patroling();
+                if (fieldOfView.canSeePlayer)
+                {
+                    lastSeenPlayerPosition = player.position;
+                    isChasingLastSeenPosition = true;
+                    ChasePlayer();
+                }
+                else if (isChasingLastSeenPosition)
+                {
+                    GoToLastSeenPlayerPosition();
+                }
+                else
+                {
+                    Patroling();
+                }
             }
         }
 
@@ -126,16 +147,56 @@ namespace MimicSpace
             myMimic.velocity = velocity;
         }
 
-        private void ChaseLastKnownPosition()
+        private void GoToLastSeenPlayerPosition()
         {
-            agent.SetDestination(lastKnownPosition);
-            velocity = Vector3.Lerp(velocity, (lastKnownPosition - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
-            myMimic.velocity = velocity;
+            agent.SetDestination(lastSeenPlayerPosition);
+            velocity = Vector3.Lerp(velocity, (lastSeenPlayerPosition - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
 
-            // Check if the enemy has reached the last known position
-            if (Vector3.Distance(transform.position, lastKnownPosition) < 1f)
+            if (Vector3.Distance(transform.position, lastSeenPlayerPosition) < 2f)
             {
-                isChasingLastKnownPosition = false;
+                isChasingLastSeenPosition = false;
+            }
+        }
+
+        private void Retreat()
+        {
+            agent.SetDestination(retreatPoint);
+
+            // Sprawdź, czy przeciwnik dotarł do punktu ucieczki
+            if (Vector3.Distance(transform.position, retreatPoint) < 2f)
+            {
+                health = 100f; // Przywróć pełne zdrowie
+                isRetreating = false; // Zresetuj stan ucieczki
+                isChasingLastSeenPosition = false;
+            }
+        }
+
+        public void TakeDamage(float damage)
+        {
+            health -= damage;
+
+            if (health <= retreatHealthThreshold && !isRetreating)
+            {
+                isRetreating = true;
+                CalculateRetreatPoint();
+                Retreat();
+            }
+        }
+
+        private void CalculateRetreatPoint()
+        {
+            Vector3 directionAwayFromPlayer = (transform.position - player.position).normalized;
+            Vector3 proposedRetreatPoint = transform.position + directionAwayFromPlayer * retreatDistance;
+
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(proposedRetreatPoint, out hit, retreatDistance, NavMesh.AllAreas))
+            {
+                retreatPoint = hit.position;
+            }
+            else
+            {
+                // Jeśli nie uda się znaleźć punktu na NavMeshu, ustaw jakikolwiek punkt oddalony
+                retreatPoint = proposedRetreatPoint;
             }
         }
     }

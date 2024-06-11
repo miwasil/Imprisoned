@@ -52,7 +52,7 @@ public class FieldOfView : MonoBehaviour
 
                 if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
                 {
-                    lastSeen = player.transform.position;
+                    
                     canSeePlayer = true;
                 }
 
