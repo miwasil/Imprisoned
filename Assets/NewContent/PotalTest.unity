@@ -431,6 +431,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1450671097}
     - target: {fileID: 7374096732402121778, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
+      propertyPath: throwCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374096732402121778, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
       propertyPath: nearThrowForce
       value: 4
       objectReference: {fileID: 0}
