@@ -43,13 +43,12 @@ namespace MimicSpace
         private bool isChasingLastSeenPosition = false;
 
         // Timer
-        public RoomTimer roomTimer;
-        public float timerMultiplier;
+        public float speedAddition = 0.5f;
         public float maxValue = 5;
         public float minValue = 2;
 
         // Random Movement Timer
-        private float randomMoveInterval = 30f;
+        private float randomMoveInterval = 10f;
         private Coroutine randomMoveCoroutine;
 
         private void Awake()
@@ -81,7 +80,7 @@ namespace MimicSpace
         {
             // Adjust height based on the ground
             AdjustHeight();
-            MimicAcceleration(roomTimer);
+            
             
             if (isRetreating)
             {
@@ -210,7 +209,8 @@ namespace MimicSpace
             }
         }
 
-        private void MimicAcceleration(RoomTimer roomTimer)
+ 
+        private void MimicAcceleration()
         {
             
             if (agent.speed >= maxValue)
@@ -222,9 +222,9 @@ namespace MimicSpace
             }
             
             //speed += (roomTimer.timer / 10 * timerMultiplier);
-            agent.acceleration += roomTimer.timer / (1 * timerMultiplier);
-            agent.angularSpeed += roomTimer.timer / (1 * timerMultiplier);
-            agent.speed += roomTimer.timer / (1 * timerMultiplier);
+            agent.acceleration += speedAddition;
+            agent.angularSpeed += speedAddition;
+            agent.speed += speedAddition;
 
         }
 
@@ -241,6 +241,7 @@ namespace MimicSpace
             {
                 yield return new WaitForSeconds(randomMoveInterval);
                 SearchWalkPoint();
+                MimicAcceleration();
             }
         }
     }
