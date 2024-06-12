@@ -33,3 +33,4 @@ _Will you be able to escape before the creature catches you?_
 ![image](https://github.com/miwasil/Imprisoned/assets/115273240/e3043ba1-08b3-43a4-97ef-b56a1cf68d2a)
 \
 ![image](https://github.com/miwasil/Imprisoned/assets/115273240/e0c3e57a-d9af-43d9-965d-f6c5ee24c58f)
+![image](https://github.com/miwasil/Imprisoned/assets/115273240/37ee41c4-1c06-4cc1-9be1-7bdda91a54cc)
