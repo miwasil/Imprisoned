@@ -69,9 +69,11 @@ public class Portal : MonoBehaviour
 
         player_camera.farClipPlane = 50f;
         my_camera.farClipPlane = 50f;
+        player_camera.nearClipPlane = 0.01f;
 
-        my_light = GetComponentInChildren<Light>();
         player_light = player_camera.GetComponentInChildren<Light>();
+        //my_light = Instantiate(player_light);
+
 
         me = GetComponent<BoxCollider>();
         me.size = new Vector3(1, 1, 100);
@@ -96,14 +98,14 @@ public class Portal : MonoBehaviour
     {
         
         Vector3 cam_vector = player_camera.transform.position - dest_screen.transform.position;
-        cam_vector = Quaternion.Euler(my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
-        my_camera.transform.position = my_screan.transform.position + cam_vector;
-        my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles;
+        cam_vector = Quaternion.Euler(transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
+        my_camera.transform.position = transform.position + cam_vector;
+        my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + transform.eulerAngles - dest_screen.transform.eulerAngles;
         
-        // Vector3 cam_vector = player_camera.transform.position - dest_screen.transform.position;
-        // cam_vector = Quaternion.Euler(my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
-        // my_camera.transform.position = my_screan.transform.position + cam_vector;
-        // my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles;
+        // Vector3 light_vector = player_light.transform.position - transform.position;
+        // light_vector = Quaternion.Euler(dest_screen.transform.eulerAngles - transform.eulerAngles) * light_vector;
+        // my_light.transform.position = dest_screen.transform.position + light_vector;
+        // my_light.transform.eulerAngles = player_light.transform.eulerAngles + transform.eulerAngles - transform.eulerAngles;
         
     }
 
@@ -210,7 +212,7 @@ public class Portal : MonoBehaviour
         int dot = System.Math.Sign(Vector3.Dot(clipPlane.forward, transform.position - my_camera.transform.position));
         Vector3 camSpacePos = my_camera.worldToCameraMatrix.MultiplyPoint(clipPlane.position);
         Vector3 camSpaceNormal = my_camera.worldToCameraMatrix.MultiplyVector(clipPlane.forward) * dot;
-        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + (float)transform.localScale.z + 0.02f;
+        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + (float)transform.localScale.z + 1f;
         Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
     }
