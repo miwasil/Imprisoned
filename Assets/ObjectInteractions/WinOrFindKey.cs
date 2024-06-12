@@ -12,6 +12,7 @@ public class CheckObjectState : MonoBehaviour
     public GameObject FindKey;
     public GameObject YouWin;
     public Image blackScreen;
+    public AudioSource playerAudioSource;
 
     private bool playerInTrigger = false;
 
@@ -21,6 +22,10 @@ public class CheckObjectState : MonoBehaviour
         FindKey.SetActive(false);
         YouWin.SetActive(false);
         blackScreen.gameObject.SetActive(false); // Ensure the black screen is initially inactive
+        if (playerAudioSource == null)
+        {
+            playerAudioSource = GetComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -65,5 +70,6 @@ public class CheckObjectState : MonoBehaviour
     {
         blackScreen.gameObject.SetActive(true);
         YouWin.SetActive(true);
+        playerAudioSource.Play();
     }
 }

@@ -6,12 +6,20 @@ public class HeroCollisionChecker : MonoBehaviour
     public GameObject enemy; // Referencja do obiektu wroga
     public Image blackScreen; // Referencja do czarnego ekranu
     public GameObject youLostText; // Referencja do tekstu "YouLost"
+    public AudioSource playerAudioSource;
+    public int already;
 
     void Start()
     {
         // Upewnij się, że czarny ekran i tekst "YouLost" są początkowo wyłączone
         blackScreen.gameObject.SetActive(false);
         youLostText.SetActive(false);
+        if (playerAudioSource == null)
+        {
+            playerAudioSource = GetComponent<AudioSource>();
+        }
+
+        already = 0;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -39,6 +47,10 @@ public class HeroCollisionChecker : MonoBehaviour
         // Aktywacja czarnego ekranu i tekstu "YouLost"
         blackScreen.gameObject.SetActive(true);
         youLostText.SetActive(true);
-
+        if (already == 0)
+        {
+            playerAudioSource.Play();
+            already=already + 1;
+        }
     }
 }
