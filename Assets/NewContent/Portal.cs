@@ -147,11 +147,11 @@ public class Portal : MonoBehaviour
                 {
                     Vector3 tmp = player.transform.position - my_screan.transform.position;
                     player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    player.transform.position = dest.transform.position;
                     player.GetComponent<Rigidbody>().velocity =
                         Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
                         player.GetComponent<Rigidbody>().velocity;
                     tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                    player.transform.position = dest.transform.position;
                     player.transform.position += tmp;
                     //Debug.Log(player.name);
                 }
