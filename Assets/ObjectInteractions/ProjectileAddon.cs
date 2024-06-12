@@ -11,10 +11,15 @@ public class ProjectileAddon : MonoBehaviour
     private bool targetHit;
     public float explosionLifetime = 2.0f;
     public float damage = 10.0f; // Damage value
-
+    public AudioSource playerAudioSource;
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        if (playerAudioSource == null)
+        {
+            playerAudioSource = GetComponent<AudioSource>();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -39,7 +44,7 @@ public class ProjectileAddon : MonoBehaviour
         transform.SetParent(other.transform);
 
         GameObject explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-
+        playerAudioSource.Play();
         // Apply damage if the target is an enemy
         if (other.CompareTag("Enemy"))
         {
