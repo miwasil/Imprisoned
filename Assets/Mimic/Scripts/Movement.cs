@@ -46,6 +46,7 @@ namespace MimicSpace
         public float speedAddition = 0.5f;
         public float maxValue = 5;
         public float minValue = 2;
+        private float currValue = 2;
 
         // Random Movement Timer
         private float randomMoveInterval = 10f;
@@ -170,6 +171,9 @@ namespace MimicSpace
             agent.SetDestination(retreatPoint);
             velocity = Vector3.Lerp(velocity, (retreatPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
             myMimic.velocity = velocity;
+            agent.acceleration = maxValue;
+            agent.angularSpeed = maxValue;
+            agent.speed = maxValue;
 
             // Check if the enemy reached the retreat point
             if (Vector3.Distance(transform.position, retreatPoint) < 2f)
@@ -177,6 +181,11 @@ namespace MimicSpace
                 health = 100f; // Restore full health
                 isRetreating = false; // Reset retreat state
                 isChasingLastSeenPosition = false;
+                agent.acceleration = currValue;
+                agent.angularSpeed = currValue;
+                agent.speed = currValue;
+                
+                
             }
         }
 
@@ -222,9 +231,11 @@ namespace MimicSpace
             }
             
             //speed += (roomTimer.timer / 10 * timerMultiplier);
-            agent.acceleration += speedAddition;
-            agent.angularSpeed += speedAddition;
-            agent.speed += speedAddition;
+            currValue += speedAddition;
+            
+            agent.angularSpeed = currValue;
+            agent.speed = currValue;
+            agent.acceleration = currValue;
 
         }
 
