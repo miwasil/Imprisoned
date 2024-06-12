@@ -122,12 +122,13 @@ public class Portal : MonoBehaviour
                 if (player.tag == "Player")
                 {
                     Vector3 tmp = player.transform.position - my_screan.transform.position;
+                    //player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    
+                    Vector3 player_rot = player.transform.eulerAngles + dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    Debug.Log(player_rot);
+                    player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
+                    
                     player.transform.position = dest.transform.position;
-                    player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    
-                    // Vector3 player_rot = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    // player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
-                    
                     player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
                     tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
                     player.transform.position += tmp;   
@@ -135,8 +136,8 @@ public class Portal : MonoBehaviour
                 else
                 {
                     Vector3 tmp = player.transform.position - my_screan.transform.position;
-                    player.transform.position = dest.transform.position;
                     player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                    player.transform.position = dest.transform.position;
                     player.GetComponent<Rigidbody>().velocity =
                         Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
                         player.GetComponent<Rigidbody>().velocity;
