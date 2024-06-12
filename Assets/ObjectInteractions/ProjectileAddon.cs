@@ -24,7 +24,8 @@ public class ProjectileAddon : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        HandleCollision(other);
+        if(other.CompareTag("Enemy"))
+            HandleCollision(other);
     }
 
     private void HandleCollision(Collider other)

@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.AI;
 
 namespace MimicSpace
-
 {
     public class Movement : MonoBehaviour
     {
@@ -42,9 +41,17 @@ namespace MimicSpace
         // Last seen player position
         private Vector3 lastSeenPlayerPosition;
         private bool isChasingLastSeenPosition = false;
-        
+
         // Timer
         public RoomTimer roomTimer;
+        public float timerMultiplier;
+        public float maxValue = 5;
+        public float minValue = 2;
+
+        // Random Movement Timer
+        private float randomMoveInterval = 30f;
+        private Coroutine randomMoveCoroutine;
+
         private void Awake()
         {
             agent = GetComponent<NavMeshAgent>();
@@ -65,16 +72,17 @@ namespace MimicSpace
             }
 
             player = fieldOfView.player; // Ensure player reference is the same
+
+            // Start the random move coroutine
+            randomMoveCoroutine = StartCoroutine(RandomMoveRoutine());
         }
 
         private void Update()
         {
             // Adjust height based on the ground
             AdjustHeight();
-            //speed += (roomTimer.timer/10);
-            //agent.acceleration += (roomTimer.timer/10);
-            //agent.angularSpeed += (roomTimer.timer/10);
-
+            MimicAcceleration(roomTimer);
+            
             if (isRetreating)
             {
                 Retreat();
@@ -111,15 +119,14 @@ namespace MimicSpace
 
         private void Patroling()
         {
-            velocity = Vector3.Lerp(velocity, (walkPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
-            myMimic.velocity = velocity;
-
             if (!walkPointSet)
                 SearchWalkPoint();
 
             if (walkPointSet)
             {
                 agent.SetDestination(walkPoint);
+                velocity = Vector3.Lerp(velocity, (walkPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
+                myMimic.velocity = velocity;
                 Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
                 // Walkpoint reached
@@ -151,6 +158,7 @@ namespace MimicSpace
         {
             agent.SetDestination(lastSeenPlayerPosition);
             velocity = Vector3.Lerp(velocity, (lastSeenPlayerPosition - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
+            myMimic.velocity = velocity;
 
             if (Vector3.Distance(transform.position, lastSeenPlayerPosition) < 2f)
             {
@@ -161,12 +169,14 @@ namespace MimicSpace
         private void Retreat()
         {
             agent.SetDestination(retreatPoint);
+            velocity = Vector3.Lerp(velocity, (retreatPoint - transform.position).normalized * speed, velocityLerpCoef * Time.deltaTime);
+            myMimic.velocity = velocity;
 
-            // Sprawdź, czy przeciwnik dotarł do punktu ucieczki
+            // Check if the enemy reached the retreat point
             if (Vector3.Distance(transform.position, retreatPoint) < 2f)
             {
-                health = 100f; // Przywróć pełne zdrowie
-                isRetreating = false; // Zresetuj stan ucieczki
+                health = 100f; // Restore full health
+                isRetreating = false; // Reset retreat state
                 isChasingLastSeenPosition = false;
             }
         }
@@ -195,8 +205,42 @@ namespace MimicSpace
             }
             else
             {
-                // Jeśli nie uda się znaleźć punktu na NavMeshu, ustaw jakikolwiek punkt oddalony
+                // If no valid point found on the NavMesh, set a far point anyway
                 retreatPoint = proposedRetreatPoint;
+            }
+        }
+
+        private void MimicAcceleration(RoomTimer roomTimer)
+        {
+            
+            if (agent.speed >= maxValue)
+            {
+                agent.acceleration = maxValue;
+                agent.angularSpeed = maxValue;
+                agent.speed = maxValue;
+                return;
+            }
+            
+            //speed += (roomTimer.timer / 10 * timerMultiplier);
+            agent.acceleration += roomTimer.timer / (1 * timerMultiplier);
+            agent.angularSpeed += roomTimer.timer / (1 * timerMultiplier);
+            agent.speed += roomTimer.timer / (1 * timerMultiplier);
+
+        }
+
+        public void ResetMimicSpeed()
+        {
+            agent.acceleration = minValue;
+            agent.angularSpeed = minValue;
+            agent.speed = minValue;
+        }
+
+        private IEnumerator RandomMoveRoutine()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(randomMoveInterval);
+                SearchWalkPoint();
             }
         }
     }
