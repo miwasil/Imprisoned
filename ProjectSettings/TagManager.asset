@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - Enemy
+  - Portal
+  - Safezone
   layers:
   - Default
   - TransparentFX
