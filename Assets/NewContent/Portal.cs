@@ -74,9 +74,14 @@ public class Portal : MonoBehaviour
         player_light = player_camera.GetComponentInChildren<Light>();
         //my_light = Instantiate(player_light);
 
-
+        float forced_width = 0.02f;
+        
         me = GetComponent<BoxCollider>();
-        me.size = new Vector3(1, 1, 100);
+        me.size = new Vector3(1, 1, 100f*0.01f/forced_width);
+        
+        Vector3 bbb = (transform.localScale);
+        bbb.z = forced_width;
+        transform.localScale = bbb;
     }
 
     public void Renderr()
@@ -106,7 +111,6 @@ public class Portal : MonoBehaviour
         // light_vector = Quaternion.Euler(dest_screen.transform.eulerAngles - transform.eulerAngles) * light_vector;
         // my_light.transform.position = dest_screen.transform.position + light_vector;
         // my_light.transform.eulerAngles = player_light.transform.eulerAngles + transform.eulerAngles - transform.eulerAngles;
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -212,9 +216,16 @@ public class Portal : MonoBehaviour
         int dot = System.Math.Sign(Vector3.Dot(clipPlane.forward, transform.position - my_camera.transform.position));
         Vector3 camSpacePos = my_camera.worldToCameraMatrix.MultiplyPoint(clipPlane.position);
         Vector3 camSpaceNormal = my_camera.worldToCameraMatrix.MultiplyVector(clipPlane.forward) * dot;
-        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + (float)transform.localScale.z + 1f;
+        float camSpaceDst = -Vector3.Dot(camSpacePos, camSpaceNormal) + (float)transform.localScale.z/2f + 0.01f;
         Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
+        
+        //float camSpaceDst =
+        if (-Vector3.Dot(camSpacePos, camSpaceNormal) < ((float)transform.localScale.z / 2f + 0.01f))
+        {
+            Debug.Log("CLIPREMOVED");
+            my_camera.projectionMatrix = player_camera.projectionMatrix;
+        }
     }
     
     public static bool VisibleFromCamera (Renderer renderer, Camera camera) {
@@ -229,7 +240,6 @@ public class Portal : MonoBehaviour
     void Update()
     {
         //set_camera_position();
-        
     }
     
 }
