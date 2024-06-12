@@ -63,7 +63,8 @@ public class Portal : MonoBehaviour
         
         player_rotation_setter = player_camera.GetComponent<FirstPersonLook>();
 
-        player_camera.farClipPlane = 16f;
+        player_camera.farClipPlane = 50f;
+        my_camera.farClipPlane = 50f;
 
     }
 
