@@ -49,6 +49,8 @@ public class Portal : MonoBehaviour
   //           //Debug.Log(a.name);
   //           //children.Add(a);
 		// }
+        heroo = GameObject.Find("hero");
+
         player_camera = heroo.GetComponentInChildren<Camera>();
         my_screan=transform.Find("PortalScreen").gameObject;
         my_camera=transform.Find("Camera").GetComponent<Camera>();
@@ -60,15 +62,22 @@ public class Portal : MonoBehaviour
         my_camera.enabled = false;
         
         player_rotation_setter = player_camera.GetComponent<FirstPersonLook>();
+
+        player_camera.farClipPlane = 16f;
+
     }
 
     public void Renderr()
     {
-        my_screan.SetActive(false);
-        set_camera_position();
-        set_near_clip_plane();
-        my_camera.Render();
-        my_screan.SetActive(true);
+        if (VisibleFromCamera(camera_target, player_camera))
+        {
+            my_screan.SetActive(false);
+            set_camera_position();
+            set_near_clip_plane();
+            my_camera.Render();
+            my_screan.SetActive(true);
+        }
+
     }
     // Update is called once per frame
     void Update()
@@ -128,9 +137,10 @@ public class Portal : MonoBehaviour
                     Debug.Log(player_rot);
                     player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
                     
-                    player.transform.position = dest.transform.position;
                     player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
                     tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                    
+					player.transform.position = dest.transform.position;
                     player.transform.position += tmp;   
                 }
                 else
@@ -187,7 +197,12 @@ public class Portal : MonoBehaviour
         Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
     }
-
+    
+    public static bool VisibleFromCamera (Renderer renderer, Camera camera) {
+        Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes (camera);
+        return GeometryUtility.TestPlanesAABB (frustumPlanes, renderer.bounds);
+    }
+    
     void FixedUpdate()
     {
         teleport_stuff();

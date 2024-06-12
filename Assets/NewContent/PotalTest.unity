@@ -399,6 +399,10 @@ PrefabInstance:
       value: 20.78461
       objectReference: {fileID: 0}
     - target: {fileID: 7358731435092825810, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358731435092825810, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
       propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
@@ -1183,6 +1187,7 @@ GameObject:
   - component: {fileID: 1600204927}
   - component: {fileID: 1600204929}
   - component: {fileID: 1600204928}
+  - component: {fileID: 1600204930}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1264,6 +1269,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1600204930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600204926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98c9fd1844e816618580e4b4774dfea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1658511727
 GameObject:
   m_ObjectHideFlags: 0
