@@ -221,11 +221,14 @@ public class Portal : MonoBehaviour
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
         
         //float camSpaceDst =
-        if (-Vector3.Dot(camSpacePos, camSpaceNormal) < ((float)transform.localScale.z / 2f + 0.01f))
+        if (Vector3.Dot(camSpacePos, camSpaceNormal) < ((float)transform.localScale.z / 2f + 0.03f))
         {
-            Debug.Log("CLIPREMOVED");
+            // Debug.Log("CLIPREMOVED");
+            // Debug.Log(Vector3.Dot(camSpacePos, camSpaceNormal));
+            // Debug.Log((float)transform.localScale.z / 2f + 0.02f);
             my_camera.projectionMatrix = player_camera.projectionMatrix;
         }
+        
     }
     
     public static bool VisibleFromCamera (Renderer renderer, Camera camera) {
