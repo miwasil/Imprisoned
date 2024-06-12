@@ -37,7 +37,7 @@ public class FirstPersonLook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SetCameraRotation(new Vector2(0, 180));
+            SetCameraRotation(new Vector2(-60, 180));
         }
 
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -53,9 +53,14 @@ public class FirstPersonLook : MonoBehaviour
 
     public void SetCameraRotation(Vector2 newRotation) // nie dziala powinno obracac gracz do zadanej poycji
     {
+        if (newRotation.x > 90)
+        {
+            newRotation.x = newRotation.x - 360;
+        }
+        Debug.Log(newRotation);
         velocity.x = newRotation.y; // Rotacja wokół osi Y (obrót poziomy)
         velocity.y = -newRotation.x; // Rotacja wokół osi X (obrót pionowy)
-
+        
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
     }

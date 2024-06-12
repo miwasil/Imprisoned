@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class Portal : MonoBehaviour
 {
@@ -28,7 +29,10 @@ public class Portal : MonoBehaviour
     private MeshRenderer camera_target;
 
     [SerializeField]private GameObject heroo;
-    
+
+    private Light my_light;
+
+    private Light player_light;
     //travellers
     private List<GameObject> objects_to_watch = new List<GameObject>();
     private List<double> objects_to_watch_dprod = new List<double>();
@@ -66,6 +70,8 @@ public class Portal : MonoBehaviour
         player_camera.farClipPlane = 50f;
         my_camera.farClipPlane = 50f;
 
+        my_light = GetComponentInChildren<Light>();
+        player_light = player_camera.GetComponentInChildren<Light>();
     }
 
     public void Renderr()
@@ -81,30 +87,21 @@ public class Portal : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
-    {
-        //set_camera_position();
-        //teleport_stuff();
-    }
+
 
     public void set_camera_position()
     {
-        //Vector3 tmp_pos = player_camera.transform.position - me.transform.position;
-        //my_camera.transform.position = dest_screen.transform.position + tmp_pos;
-        //my_camera.transform.rotation = player_camera.transform.rotation;
-        //my_camera.GetComponentInChildren<GameObject>().transform.position = my_camera.transform.position;
         
         Vector3 cam_vector = player_camera.transform.position - dest_screen.transform.position;
         cam_vector = Quaternion.Euler(my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
         my_camera.transform.position = my_screan.transform.position + cam_vector;
         my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles;
         
-        // Vector3 entr_player_vector = player.transform.position - me.transform.position;
-        // entr_player_vector =
-        //     Quaternion.Euler(dest_screen.transform.eulerAngles - me.transform.eulerAngles) * entr_player_vector;
-        // dummy.transform.position = dest_screen.transform.position + entr_player_vector;
-        // dummy.transform.eulerAngles =
-        //     player.transform.eulerAngles + dest_screen.transform.eulerAngles - me.transform.eulerAngles;
+        // Vector3 cam_vector = player_camera.transform.position - dest_screen.transform.position;
+        // cam_vector = Quaternion.Euler(my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles) * cam_vector;
+        // my_camera.transform.position = my_screan.transform.position + cam_vector;
+        // my_camera.transform.eulerAngles = player_camera.transform.eulerAngles + my_screan.transform.eulerAngles - dest_screen.transform.eulerAngles;
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -141,14 +138,14 @@ public class Portal : MonoBehaviour
                         Vector3 tmp = player.transform.position - my_screan.transform.position;
                         //player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
 
-                        Vector3 player_rot = player.transform.eulerAngles + dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                        Vector3 player_rot = player_camera.transform.eulerAngles + dest.transform.eulerAngles - my_screan.transform.eulerAngles;
                         Debug.Log(player_rot);
                         player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
 
                         player.GetComponent<Rigidbody>().velocity =
                             Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
                             player.GetComponent<Rigidbody>().velocity;
-                        tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+                        tmp = Quaternion.Euler(dest.transform.eulerAngles - transform.eulerAngles) * tmp;
 
                         player.transform.position = dest.transform.position;
                         player.transform.position += tmp;
@@ -222,6 +219,11 @@ public class Portal : MonoBehaviour
     
     void FixedUpdate()
     {
+    }
+    void Update()
+    {
+        //set_camera_position();
         teleport_stuff();
     }
+    
 }

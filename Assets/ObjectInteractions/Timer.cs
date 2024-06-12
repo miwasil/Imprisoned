@@ -54,6 +54,6 @@ public class RoomTimer : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60);
         int seconds = Mathf.FloorToInt(timer % 60);
-        Timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        //Timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
