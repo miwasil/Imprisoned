@@ -119,41 +119,52 @@ public class Portal : MonoBehaviour
     {
         for (int i = 0; i < objects_to_watch.Count; i++)
         {
-            player = objects_to_watch[i];
-            Vector3 player_portal_vector = player.transform.position - transform.position;
-            float dot_now = Vector3.Dot(transform.forward, player_portal_vector);
-            //Debug.Log(dot_now);
-            //Debug.Log(objects_to_watch_dprod[i]);
-            if (Math.Sign(dot_now) != Math.Sign(objects_to_watch_dprod[i]))
+            if (!objects_to_watch[i])
             {
-                objects_to_watch.Remove(player);
-                
-                if (player.tag == "Player")
+                objects_to_watch.RemoveAt(i);
+                objects_to_watch_dprod.RemoveAt(i);
+            }
+            else
+            {
+                player = objects_to_watch[i];
+                Vector3 player_portal_vector = player.transform.position - transform.position;
+                float dot_now = Vector3.Dot(transform.forward, player_portal_vector);
+                //Debug.Log(dot_now);
+                //Debug.Log(objects_to_watch_dprod[i]);
+                if (Math.Sign(dot_now) != Math.Sign(objects_to_watch_dprod[i]))
                 {
-                    Vector3 tmp = player.transform.position - my_screan.transform.position;
-                    //player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    
-                    Vector3 player_rot = player.transform.eulerAngles + dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    Debug.Log(player_rot);
-                    player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
-                    
-                    player.GetComponent<Rigidbody>().velocity = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * player.GetComponent<Rigidbody>().velocity;
-                    tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
-                    
-					player.transform.position = dest.transform.position;
-                    player.transform.position += tmp;   
-                }
-                else
-                {
-                    Vector3 tmp = player.transform.position - my_screan.transform.position;
-                    player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
-                    player.GetComponent<Rigidbody>().velocity =
-                        Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
-                        player.GetComponent<Rigidbody>().velocity;
-                    tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
-                    player.transform.position = dest.transform.position;
-                    player.transform.position += tmp;
-                    //Debug.Log(player.name);
+                    RemoveTraveler(player);
+
+                    if (player.tag == "Player")
+                    {
+                        Vector3 tmp = player.transform.position - my_screan.transform.position;
+                        //player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+
+                        Vector3 player_rot = player.transform.eulerAngles + dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                        Debug.Log(player_rot);
+                        player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
+
+                        player.GetComponent<Rigidbody>().velocity =
+                            Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
+                            player.GetComponent<Rigidbody>().velocity;
+                        tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+
+                        player.transform.position = dest.transform.position;
+                        player.transform.position += tmp;
+                    }
+                    else
+                    {
+                        Vector3 tmp = player.transform.position - my_screan.transform.position;
+                        player.transform.eulerAngles += dest.transform.eulerAngles - my_screan.transform.eulerAngles;
+                        player.GetComponent<Rigidbody>().velocity =
+                            Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) *
+                            player.GetComponent<Rigidbody>().velocity;
+                        tmp = Quaternion.Euler(dest.transform.eulerAngles - my_screan.transform.eulerAngles) * tmp;
+
+                        player.transform.position = dest.transform.position;
+                        player.transform.position += tmp;
+                        //Debug.Log(player.name);
+                    }
                 }
             }
 
@@ -177,8 +188,13 @@ public class Portal : MonoBehaviour
     // }
     private void OnTriggerExit(Collider other)
     {
-        int tmp = objects_to_watch.IndexOf(other.gameObject);
-        objects_to_watch.Remove(other.gameObject);
+        RemoveTraveler(other.gameObject);
+    }
+
+    private void RemoveTraveler(GameObject other)
+    {
+        int tmp = objects_to_watch.IndexOf(other);
+        objects_to_watch.Remove(other);
         if (tmp != -1)
         {
             objects_to_watch_dprod.RemoveAt(tmp);

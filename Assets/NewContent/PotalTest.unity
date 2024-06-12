@@ -420,7 +420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7374096732402121778, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
       propertyPath: totalThrows
-      value: 7
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7374096732402121778, guid: 823b232dd052016468ba0e45ae50aee9, type: 3}
       propertyPath: farThrowForce
@@ -1337,7 +1337,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 845356008969534882, guid: 7d71222504a18c947973af325b072b92, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 845356008969534882, guid: 7d71222504a18c947973af325b072b92, type: 3}
       propertyPath: waterPrefab
