@@ -19,12 +19,12 @@ public class allPortals : MonoBehaviour
         {
             a = transform.GetChild(i).gameObject;
             //Debug.Log(a.GetType());
-            Debug.Log(a.name);
+            //Debug.Log(a.name);
             all_portals.Add(a);
             //all_portals.Add(transform.GetChild(i).gameObject);
             //print(a.GetComponentInChildren<Camera>().name);
             all_cameras.Add((a.GetComponentInChildren<Camera>()));
-            Debug.Log(all_portals[i].GetComponent<Portal>());
+            //Debug.Log(all_portals[i].GetComponent<Portal>());
 
         }
     }
@@ -33,9 +33,8 @@ public class allPortals : MonoBehaviour
     {
         for (int i = 0; i < portal_count; i++)
         {
-            all_portals[i].GetComponent<Portal>().Renderr();
+            //all_portals[i].GetComponent<Portal>().Renderr();
         }
- 
     }
     
     // Update is called once per frame

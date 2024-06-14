@@ -1,4 +1,5 @@
 using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -36,6 +37,10 @@ public class Portal : MonoBehaviour
     //travellers
     private List<GameObject> objects_to_watch = new List<GameObject>();
     private List<double> objects_to_watch_dprod = new List<double>();
+
+    private Portal dest_script;
+
+    private Vector3 current_screan_pos;
     void Awake()
     {
         // me = GetComponent<BoxCollider>();
@@ -74,7 +79,7 @@ public class Portal : MonoBehaviour
         player_light = player_camera.GetComponentInChildren<Light>();
         //my_light = Instantiate(player_light);
 
-        float forced_width = 0.02f;
+        float forced_width = 0.8f;
         
         me = GetComponent<BoxCollider>();
         me.size = new Vector3(1, 1, 100f*0.01f/forced_width);
@@ -82,6 +87,12 @@ public class Portal : MonoBehaviour
         Vector3 bbb = (transform.localScale);
         bbb.z = forced_width;
         transform.localScale = bbb;
+
+        dest_script = dest.GetComponent<Portal>();
+        
+        my_screan.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+
+        my_screan.GetComponent<Renderer>().receiveShadows = false;
     }
 
     public void Renderr()
@@ -148,7 +159,7 @@ public class Portal : MonoBehaviour
                         //player.transform.eulerAngles = dest.transform.eulerAngles - my_screan.transform.eulerAngles;
 
                         Vector3 player_rot = player_camera.transform.eulerAngles + dest.transform.eulerAngles - transform.eulerAngles;
-                        Debug.Log(player_rot);
+                        //Debug.Log(player_rot);
                         player_rotation_setter.SetCameraRotation(new Vector2(player_rot.x, player_rot.y));
 
                         player.GetComponent<Rigidbody>().velocity =
@@ -158,6 +169,7 @@ public class Portal : MonoBehaviour
 
                         player.transform.position = dest.transform.position;
                         player.transform.position += tmp;
+                        dest_script.move_screan(-current_screan_pos);
                     }
                     else
                     {
@@ -210,6 +222,7 @@ public class Portal : MonoBehaviour
 
     void set_near_clip_plane()
     {
+        //my_screan.transform.localPosition = new Vector3(0, 0, 0);
         // http://www.terathon.com/lengyel/Lengyel-Oblique.pdf
         Transform clipPlane = transform;
         //Vector3 tmp = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -220,17 +233,16 @@ public class Portal : MonoBehaviour
         Vector4 CPCS = new Vector4(camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, camSpaceDst);
         my_camera.projectionMatrix = player_camera.CalculateObliqueMatrix(CPCS);
         
-        //float camSpaceDst =
-        if (Vector3.Dot(camSpacePos, camSpaceNormal) < ((float)transform.localScale.z / 2f + 0.03f))
+        if (Math.Abs(Vector3.Dot(camSpacePos, camSpaceNormal)) < ((float)transform.localScale.z / 2f + 0.03f))
         {
             // Debug.Log("CLIPREMOVED");
             // Debug.Log(Vector3.Dot(camSpacePos, camSpaceNormal));
             // Debug.Log((float)transform.localScale.z / 2f + 0.02f);
-            my_camera.projectionMatrix = player_camera.projectionMatrix;
+            //my_camera.projectionMatrix = player_camera.projectionMatrix;
+            
+            
         }
-        
     }
-    
     public static bool VisibleFromCamera (Renderer renderer, Camera camera) {
         Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes (camera);
         return GeometryUtility.TestPlanesAABB (frustumPlanes, renderer.bounds);
@@ -239,10 +251,24 @@ public class Portal : MonoBehaviour
     void FixedUpdate()
     {
         teleport_stuff();
+        move_screan_calc();
+        move_screan(current_screan_pos);
+    }
+
+    void move_screan_calc()
+    {
+        Vector3 player_portal_vector = heroo.transform.position - transform.position;
+        float dot_now = Vector3.Dot(transform.forward, player_portal_vector);
+        current_screan_pos = new Vector3(0, 0, -Math.Sign(dot_now));
+        //my_screan.transform.localPosition = current_screan_pos;
+        //Debug.Log(Math.Sign(dot_now));
+    }
+    void move_screan(Vector3 pos)
+    {
+        my_screan.transform.localPosition = pos;
     }
     void Update()
     {
         //set_camera_position();
     }
-    
 }
